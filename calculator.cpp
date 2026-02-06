@@ -140,4 +140,4 @@ void SolveLogic(struct Node **start) {
     }
     printf("------------------------\n");
     printf("Final Answer = %.2f\n", (*start)->data);
-} 
+} //tast 
