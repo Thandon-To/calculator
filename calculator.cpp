@@ -31,26 +31,3 @@ int main() {
 
     return 0;
 }
-
-// --- งานคนที่ 2: Linked List ---
-void AddNode(struct Node *walk, double d, char o) {
-    struct Nodetemp = NULL;
-    while (walk != NULL) {
-        temp =walk;
-        walk = &(*walk)->next;
-    }
-    walk = new struct Node;
-    (walk)->data = d;
-    (walk)->op = o;
-    (walk)->next = NULL;
-    (walk)->back = temp;
-}
-
-void ShowAll(struct Nodewalk) {
-    while (walk != NULL) {
-        if (walk->op != '=') printf("%.2f %c ", walk->data, walk->op);
-        else printf("%.2f", walk->data);
-        walk = walk->next;
-    }
-    printf("\n");
-}
