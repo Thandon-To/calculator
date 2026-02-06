@@ -18,7 +18,7 @@ void DelNode(struct Node *now);
 // --- [ส่วนของคนที่ 1] Main ---
 int main() {
     struct Node *start = NULL;
-    char input[999];
+    char input[50];
 
     printf("--- Calculator (No ctype/stdlib) ---\n");
     printf("Input Expression: ");
