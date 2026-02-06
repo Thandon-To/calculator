@@ -122,7 +122,6 @@ void SolveLogic(struct Node **start) {
     }
 
     // Loop 2: + -
-    walk = *start;
     while (walk != NULL && walk->next != NULL) {
         char o = walk->op;
         if (o == '+' || o == '-') {
@@ -132,7 +131,7 @@ void SolveLogic(struct Node **start) {
             if (o == '+') walk->data = val1 + val2;
             else if (o == '-') walk->data = val1 - val2;
 
-            DelNode(walk);
+            DelNode();
             printf("Step: "); ShowAll(*start);
         } else {
             walk = walk->next;
@@ -140,4 +139,4 @@ void SolveLogic(struct Node **start) {
     }
     printf("------------------------\n");
     printf("Final Answer = %.2f\n", (*start)->data);
-}
+} //tast 
